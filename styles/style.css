@@ -41,7 +41,14 @@
 /* Inter Font (great for readability and minimal design) */
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
+/* Courier font (because I like it) */
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Jacquard+24&family=Jacques+Francois&display=swap');
 /*
+/* Nunito (kinda goes well with courier for headers) */
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+
 
 /* 
 ██ ███    ███ ██████   ██████  ██████  ████████      ██████ ███████ ███████ 
@@ -82,6 +89,8 @@
 /* File for adding a scroll-to-top button or effect */
 @import url("scroll-to-top.css");
 
+
+
 /* 
 ██    ██  █████  ██████  ██  █████  ██████  ██      ███████ ███████ 
 ██    ██ ██   ██ ██   ██ ██ ██   ██ ██   ██ ██      ██      ██      
@@ -102,9 +111,9 @@
 
 :root {
   /* Typography */
-  --font-family-body: "Inter", sans-serif;
-  --font-family-heading: "Eczar", serif;
-  --font-family-project-title: "Eczar", serif;
+  --font-family-body: "Courier", sans-serif;
+  --font-family-heading: "Nuito", serif;
+  --font-family-project-title: "Nunito", serif;
   /* Core Colours */
   --color-text-primary: #222;
   --color-text-secondary: #333;

@@ -48,6 +48,11 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
+/* Rubik */
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+/* Montserrat */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 
 
 /* 
@@ -111,9 +116,9 @@
 
 :root {
   /* Typography */
-  --font-family-body: "Courier", sans-serif;
-  --font-family-heading: "Nuito", serif;
-  --font-family-project-title: "Nunito", serif;
+  --font-family-body: "Montserrat", sans-serif;
+  --font-family-heading: "Courier", serif;
+  --font-family-project-title: "Courier", serif;
   /* Core Colours */
   --color-text-primary: #222;
   --color-text-secondary: #333;
@@ -123,17 +128,17 @@
   --color-highlight: lemonchiffon;
   --color-fallback: #ff057c; /* Fallback color for glitch effect on 404 page */
   /* Backgrounds */
-  --color-bg: #fdfdfd;
-  --color-bg-about: #f5f5f5;
-  --color-bg-footer: #f5f5f5;
+  --color-bg: #FFF6F3;
+  --color-bg-about: #FFF6F3;
+  --color-bg-footer: #FFF6F3;
   --color-bg-holding-page: rgba(82, 0, 255, 0.6);
   /* Headings */
-  --h1-color: #5200ff;
-  --h2-color: #5200ff;
-  --h3-color: #5200ff;
-  --h4-color: #5200ff;
-  --h5-color: #5200ff;
-  --h6-color: #5200ff;
+  --h1-color: #031D22;
+  --h2-color: #031D22;
+  --h3-color: #031D22;
+  --h4-color: #031D22;
+  --h5-color: #031D22;
+  --h6-color: #031D22;
   /* Special Text Colours */
   --color-text-holding-title: #ebedf0;
   --color-text-project-category: #ffffff;

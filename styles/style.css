@@ -114,6 +114,9 @@
 
 /* TODO: Customize these variables to fit your design. You can add new ones or delete ones you don’t need. */
 
+*{
+  border: #00ffff, 2px, solid;
+}
 
 :root {
   /* Typography */
@@ -145,7 +148,7 @@
   --color-text-project-category: #ffffff;
   --color-text-project-description: #222;
   --color-text-project-sidebar: #222;
-  --color-text-project-title: #5200ff;
+  --color-text-project-title: #51647b;
   --color-text-work-grid-title: #ffffff;
   /* Link States */
   --color-link: #5200ff;

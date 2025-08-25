@@ -1,0 +1,10 @@
+ <section class="full-width-section">
+        <div class="full-width-headline-wrapper">
+          <h1 class="h1-full-width">🍨 Finally, dessert:</h1>
+          <h2 class="h2-full-width">The Playground page</h2>
+          <p class="max-text-width">A Playground page is often a scattered grid of half-finished projects, random ideas, personal experiments, and rejected work we don’t usually get to see in a polished portfolio. It’s the space where the rules don’t apply—you don’t need to fit a brief, explain your process, or curate what stays and what goes.</p>
+          <p class="max-text-width">This is the low-pressure zone.</p>
+          <p class="max-text-width">If you’re feeling unsure about sharing your work, start with a Play page.</p>
+          <p class="max-text-width">It’s a space for dreams and ideas still finding their footing.</p>
+        </div>
+      </section>

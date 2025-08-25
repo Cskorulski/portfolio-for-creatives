@@ -114,6 +114,10 @@
 
 /* TODO: Customize these variables to fit your design. You can add new ones or delete ones you don’t need. */
 
+body{
+  background-color: #fef8f2; /* Your new wall color */
+}
+
 :root {
   /* Typography */
   --font-family-body: "Montserrat", sans-serif;

@@ -120,10 +120,10 @@
 
 :root {
   /* Typography */
-  --font-family-body: "Robotto-Slab", arial, sans-serif;
+  --font-family-body: "Roboto-Slab", arial, sans-serif;
   --font-family-heading: "Rubik", arial, sans-serif;
-  --font-family-subheading: "Robotto-slab", arial, sans-serif;
-  --font-family-project-title: "Robotto-slab", sans-serif;
+  --font-family-subheading: "Roboto-Slab", arial, sans-serif;
+  --font-family-project-title: "Roboto-Slab", sans-serif;
   /* Core Colours */
   --color-text-primary: #51647b;
   --color-text-secondary: #51647b;

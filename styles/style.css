@@ -42,18 +42,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 /* Courier font (because I like it) */
-@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Jacquard+24&family=Jacques+Francois&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Jacquard+24&family=Jacques+Francois&display=swap");
 /*
 /* Nunito (kinda goes well with courier for headers) */
 
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
 
 /* Rubik */
-@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+/* Robotto Slab */
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap");
 
 /* Montserrat */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
 
 /* 
 ██ ███    ███ ██████   ██████  ██████  ████████      ██████ ███████ ███████ 
@@ -94,8 +96,6 @@
 /* File for adding a scroll-to-top button or effect */
 @import url("scroll-to-top.css");
 
-
-
 /* 
 ██    ██  █████  ██████  ██  █████  ██████  ██      ███████ ███████ 
 ██    ██ ██   ██ ██   ██ ██ ██   ██ ██   ██ ██      ██      ██      
@@ -114,16 +114,16 @@
 
 /* TODO: Customize these variables to fit your design. You can add new ones or delete ones you don’t need. */
 
-
 /**{
   border: #00ffff, 2px, solid;
-}*/ 
+}*/
 
 :root {
   /* Typography */
-  --font-family-body: "Montserrat", sans-serif;
-  --font-family-heading: "Courier", serif;
-  --font-family-project-title: "Courier", serif;
+  --font-family-body: "Robotto-Slab", arial, sans-serif;
+  --font-family-heading: "Rubik", arial, sans-serif;
+  --font-family-subheading: "Robotto-slab", arial, sans-serif;
+  --font-family-project-title: "Robotto-slab", sans-serif;
   /* Core Colours */
   --color-text-primary: #51647b;
   --color-text-secondary: #51647b;
@@ -138,12 +138,12 @@
   --color-bg-footer: #f5f5f5;
   --color-bg-holding-page: #f5f5f5;
   /* Headings */
-  --h1-color: #031D22;
-  --h2-color: #031D22;
-  --h3-color: #031D22;
-  --h4-color: #031D22;
-  --h5-color: #031D22;
-  --h6-color: #031D22;
+  --h1-color: #031d22;
+  --h2-color: #031d22;
+  --h3-color: #031d22;
+  --h4-color: #031d22;
+  --h5-color: #031d22;
+  --h6-color: #031d22;
   /* Special Text Colours */
   --color-text-holding-title: #ebedf0;
   --color-text-project-category: #ffffff;
@@ -168,7 +168,12 @@
   --color-bg-sidebar-project: orangered;
   --color-bg-sidebar-work: lemonchiffon;
   --color-gradient-hero: linear-gradient(90deg, #ff00ff, #00ffff);
-  --color-gradient-project-details: linear-gradient(-225deg, #ff057c 0%, #8d0b93 50%, #321575 100%);
+  --color-gradient-project-details: linear-gradient(
+    -225deg,
+    #ff057c 0%,
+    #8d0b93 50%,
+    #321575 100%
+  );
   /* Special Elements */
   --color-icon-heart: darkred;
   --color-text-holding-footer: #f8f8ff;
@@ -243,7 +248,9 @@ body {
 /* ------------------------------- */
 
 ::selection {
-  background: var(--color-bg-selection); /* Uses your custom color for highlighted text */
+  background: var(
+    --color-bg-selection
+  ); /* Uses your custom color for highlighted text */
 }
 
 /* ---------------------------------------- */
@@ -695,7 +702,9 @@ a.nav-link-primary:hover {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: var(--color-bg-full-width); /* Background color for full-width sections */
+  background: var(
+    --color-bg-full-width
+  ); /* Background color for full-width sections */
   margin-bottom: 1rem;
 }
 
@@ -749,13 +758,17 @@ a.nav-link-primary:hover {
 .portfolio,
 .project-wrapper,
 .work-sidebar-wrapper {
-  padding: var(--padding-tiny); /* Padding to keep content from touching edges */
+  padding: var(
+    --padding-tiny
+  ); /* Padding to keep content from touching edges */
 }
 
 /* Work Sidebar on Mobile */
 .work-sidebar {
   width: 100%;
-  background: var(--color-bg-sidebar-work); /* Background color for the sidebar */
+  background: var(
+    --color-bg-sidebar-work
+  ); /* Background color for the sidebar */
 }
 
 /* Main Work Area with Sidebar on Mobile */
@@ -766,7 +779,10 @@ a.nav-link-primary:hover {
 /* Defining the work page grid */
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Creates a responsive grid */
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(300px, 1fr)
+  ); /* Creates a responsive grid */
   grid-gap: 1rem; /* Space between grid items */
   /* The auto-fit and minmax() function help ensure responsiveness across screen sizes */
 }
@@ -779,10 +795,6 @@ a.nav-link-primary:hover {
   overflow: hidden;
   object-position: center;
   object-fit: cover;
-  
-  
-
-
 }
 
 /* Project container for background and padding */
@@ -807,7 +819,9 @@ a.nav-link-primary:hover {
   align-items: center;
   flex-direction: column;
   padding: var(--padding-small);
-  background-color: var(--color-overlay-primary); /* Background color of the overlay */
+  background-color: var(
+    --color-overlay-primary
+  ); /* Background color of the overlay */
   transition: opacity var(--duration-normal), visibility var(--duration-normal);
 }
 
@@ -1032,7 +1046,7 @@ a.nav-link-primary:hover {
 
 /* Wrapper for the main project section and sidebar */
 
-body{
+body {
   background-color: #f5f5f5;
 }
 
@@ -1061,7 +1075,6 @@ body{
   padding: var(--padding-small);
   display: flex;
   flex-direction: column;
-
 }
 
 /* Container for project images with center alignment */
@@ -1100,15 +1113,13 @@ body{
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  margin: 1rem; 
+  margin: 1rem;
 }
 /* Project details section */
 .project-details {
   width: 100%;
   padding: var(--padding-small);
-
 }
-
 
 /* Previous/Next Arrow Styles */
 
@@ -1134,11 +1145,10 @@ body{
   padding: 0;
 }
 
-.hor-project-display{
+.hor-project-display {
   display: flex;
-  flex-direction:row; 
-    flex-wrap: wrap;
-  
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 /* project-thumb-2{
@@ -1193,7 +1203,12 @@ body{
   width: 100%;
   min-height: 100vh;
   /* TODO: Delete the following if you do not want a grainy gradient background on index.html. Be careful not to delete the closing } */
-  background: linear-gradient(0deg, rgba(0, 0, 0, 1), var(--color-bg-holding-page)), var(--image-noise-texture);
+  background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 1),
+      var(--color-bg-holding-page)
+    ),
+    var(--image-noise-texture);
   /* For more on grainy gradients see https://grainy-gradients.vercel.app/ */
 }
 
@@ -1215,7 +1230,9 @@ body{
 
 .holding-page-copyright {
   font-size: 0.8rem; /* Smaller font size for copyright text */
-  color: var(--color-text-holding-footer); /* Custom color for the footer text */
+  color: var(
+    --color-text-holding-footer
+  ); /* Custom color for the footer text */
   margin-bottom: 0; /* Removes default margin from the bottom of the copyright text */
 }
 

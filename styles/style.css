@@ -125,48 +125,48 @@
   --font-family-subheading: "Roboto Slab", sans-serif;
   --font-family-project-title: "Roboto Slab", sans-serif;
   /* Core Colours */
-  --color-text-primary: #51647b;
-  --color-text-secondary: #51647b;
-  --color-accent-primary: #51647b;
-  --color-accent-secondary: #51647b;
-  --color-overlay-primary: #3d4e42;
-  --color-highlight: #51647b;
+  --color-text-primary: #514B24;
+  --color-text-secondary: #514B24;
+  --color-accent-primary: #514B24;
+  --color-accent-secondary: #514B24;
+  --color-overlay-primary: #514B24;
+  --color-highlight: #514B24;
   --color-fallback: #ff057c; /* Fallback color for glitch effect on 404 page */
   /* Backgrounds */
-  --color-bg: #f5f5f5;
-  --color-bg-about: #f5f5f5;
-  --color-bg-footer: #f5f5f5;
-  --color-bg-holding-page: #f5f5f5;
+  --color-bg: #FFF8E2;
+  --color-bg-about: #FFF8E2;
+  --color-bg-footer: #FFF8E2;
+  --color-bg-holding-page: #FFF8E2;
   /* Headings */
-  --h1-color: #031d22;
-  --h2-color: #031d22;
-  --h3-color: #031d22;
-  --h4-color: #031d22;
-  --h5-color: #031d22;
-  --h6-color: #031d22;
+  --h1-color: #514B24;
+  --h2-color: #514B24;
+  --h3-color: #514B24;
+  --h4-color: #514B24;
+  --h5-color: #514B24;
+  --h6-color: #514B24;
   /* Special Text Colours */
-  --color-text-holding-title: #ebedf0;
-  --color-text-project-category: #ffffff;
-  --color-text-project-description: #222;
-  --color-text-project-sidebar: #222;
-  --color-text-project-title: #51647b;
-  --color-text-work-grid-title: #ffffff;
+  --color-text-holding-title: #FFF8E2;
+  --color-text-project-category: #FFF8E2;
+  --color-text-project-description:#514B24;
+  --color-text-project-sidebar: #514B24
+  --color-text-project-title: #514B24;
+  --color-text-work-grid-title: #FFF8E2;
   /* Link States */
-  --color-link: #5200ff;
-  --color-link-hover: #111;
-  --color-link-visited: #5200ff;
+  --color-link: #B3A539;
+  --color-link-hover: #B3A539;
+  --color-link-visited: #85A98C;
   /* Navigation */
   --color-nav-link: #5200ff;
-  --color-nav-link-hover: #321575;
+  --color-nav-link-hover: #13101b;
   --color-nav-arrow: #5200ff;
   --color-nav-arrow-hover: #000;
   --color-nav-arrow-stroke: #5200ff;
   --color-nav-arrow-stroke-hover: #000;
   /* Components */
-  --color-bg-full-width: #f5f5f5;
-  --color-bg-project-description: #f5f5f5;
+  --color-bg-full-width: #FFF8E2;
+  --color-bg-project-description: #FFF8E2;
   --color-bg-sidebar-project: orangered;
-  --color-bg-sidebar-work: lemonchiffon;
+  --color-bg-sidebar-work: #FFF8E2;
   --color-gradient-hero: linear-gradient(90deg, #ff00ff, #00ffff);
   --color-gradient-project-details: linear-gradient(
     -225deg,
@@ -176,7 +176,7 @@
   );
   /* Special Elements */
   --color-icon-heart: darkred;
-  --color-text-holding-footer: #f8f8ff;
+  --color-text-holding-footer: #FFF8E2;
   --color-bg-selection: #5200ff;
   --color-shadow-stroke: rgba(0, 0, 0, 0.4);
   /* Assets */
@@ -772,6 +772,7 @@ a.nav-link-primary:hover {
   padding: var(
     --padding-tiny
   ); /* Padding to keep content from touching edges */
+background-color: var(--color-bg); 
 }
 
 /* Work Sidebar on Mobile */

@@ -479,8 +479,9 @@ em {
 
 /* Large project title — appears on individual project pages */
 .project-title {
-  font-size: 3.625rem;
+  font-size: 2rem;
   font-family: var(--font-family-project-title);
+  font-weight: 400;
   color: var(--color-text-project-title);
   margin-bottom: 1rem;
 }
@@ -635,6 +636,7 @@ a.nav-link-primary:hover {
 }
 .hero-header {
   min-height: 6rem; /* Space reserved for logo + nav */
+  width: 100%; 
 }
 
 .nav-branding {
@@ -654,7 +656,7 @@ a.nav-link-primary:hover {
 }
 
 .nav-branding-logo {
-  width: 3rem;
+  width: 2.5rem;
   /* TODO: Adjust the width of the logo on mobile devices here */
 }
 

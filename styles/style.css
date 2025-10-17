@@ -48,8 +48,7 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
 
-/* Rubik */
-@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
 
 /* Robotto Slab */
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap");
@@ -133,10 +132,11 @@
   --color-highlight: #514B24;
   --color-fallback: #ff057c; /* Fallback color for glitch effect on 404 page */
   /* Backgrounds */
-  --color-bg: #FFF8E2;
-  --color-bg-about: #FFF8E2;
-  --color-bg-footer: #FFF8E2;
-  --color-bg-holding-page: #FFF8E2;
+  --color-bg:#fffcf3;
+  --color-bg-about:#fffcf3;
+  --color-bg-footer:#fffcf3;
+  --color-bg-holding-page:#fffcf3;
+  --color-work-display: #fffcf3; 
   /* Headings */
   --h1-color: #514B24;
   --h2-color: #514B24;
@@ -145,28 +145,28 @@
   --h5-color: #514B24;
   --h6-color: #514B24;
   /* Special Text Colours */
-  --color-text-holding-title: #FFF8E2;
-  --color-text-project-category: #FFF8E2;
+  --color-text-holding-title: #fffcf3;
+  --color-text-project-category: #fffcf3;
   --color-text-project-description:#514B24;
   --color-text-project-sidebar: #514B24
   --color-text-project-title: #514B24;
-  --color-text-work-grid-title: #FFF8E2;
+  --color-text-work-grid-title: #fffcf3;
   /* Link States */
-  --color-link: #B3A539;
-  --color-link-hover: #B3A539;
-  --color-link-visited: #85A98C;
+  --color-link:#85A98C;
+  --color-link-hover: #FEA830;
+  --color-link-visited: #B3A539;
   /* Navigation */
-  --color-nav-link: #5200ff;
+  --color-nav-link: #E66841;
   --color-nav-link-hover: #13101b;
-  --color-nav-arrow: #5200ff;
+  --color-nav-arrow: #E66841;
   --color-nav-arrow-hover: #000;
-  --color-nav-arrow-stroke: #5200ff;
+  --color-nav-arrow-stroke: #E66841;
   --color-nav-arrow-stroke-hover: #000;
   /* Components */
-  --color-bg-full-width: #FFF8E2;
-  --color-bg-project-description: #FFF8E2;
+  --color-bg-full-width: #fffcf3;
+  --color-bg-project-description: #fffcf3;
   --color-bg-sidebar-project: orangered;
-  --color-bg-sidebar-work: #FFF8E2;
+  --color-bg-sidebar-work: #fffcf3;
   --color-gradient-hero: linear-gradient(90deg, #ff00ff, #00ffff);
   --color-gradient-project-details: linear-gradient(
     -225deg,
@@ -176,7 +176,7 @@
   );
   /* Special Elements */
   --color-icon-heart: darkred;
-  --color-text-holding-footer: #FFF8E2;
+  --color-text-holding-footer: #fffcf3;
   --color-bg-selection: #5200ff;
   --color-shadow-stroke: rgba(0, 0, 0, 0.4);
   /* Assets */
@@ -403,7 +403,7 @@ h1 {
 
 h2 {
   font-size: 2rem;
-  font-family: var(--font-family-heading);
+  font-family: var(--font-family-subheading);
   line-height: 1.2;
   margin-bottom: 1rem;
   color: var(--h2-color);
@@ -422,6 +422,7 @@ h4 {
   font-family: var(--font-family-subheading);
   line-height: 1.2;
   margin-bottom: 1rem;
+  font-weight: 300;
   color: var(--h4-color);
 }
 
@@ -448,7 +449,7 @@ h6 {
 /* ------------------------------------------------------------------ */
 
 p {
-  font-size: 0.75rem;
+  font-size: 1rem;
   font-family: var(--font-family-body);
   line-height: 145%;
   margin-bottom: 1rem;
@@ -486,7 +487,7 @@ em {
 
 /* Project description text — pairs with the project title */
 .project-description {
-  font-size: 1.225rem;
+  font-size: 1rem;
   line-height: 1.2;
   color: var(--color-text-project-description);
   margin-bottom: 1rem;
@@ -848,6 +849,11 @@ background-color: var(--color-bg);
   /* Placeholder: no custom styles yet */
 }
 
+.project-details{
+  background-color: ;
+  
+}
+
 /*
 
 ███████ ██ ██████  ███████ ██████   █████  ██████  
@@ -1094,6 +1100,7 @@ body {
   padding: var(--padding-small);
   display: flex;
   flex-direction: column;
+  background: linear-gradient (var(--color-work-display), var(--color-bg));
 }
 
 /* Container for project images with center alignment */
@@ -1115,7 +1122,7 @@ body {
   padding: var(--padding-small);
   width: 100%;
   margin-bottom: 1rem; /* Space below the description */
-  border-bottom: #3d4e42 15px dotted;
+  border-bottom: #3d4e42 2px dashed;
 }
 
 /* Column styles for two-column layouts */
@@ -1168,6 +1175,10 @@ body {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+}
+
+.safe-background{
+  background: var(--color-work-display);
 }
 
 /* project-thumb-2{

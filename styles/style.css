@@ -312,6 +312,7 @@ svg {
 /* Smooth transition when applying transformations – improves hover experience */
 .rotate {
   transition: transform 0.3s ease;
+  border-radius: 2rem;
 }
 
 /* Rotates the element slightly on hover – adds a playful effect */
@@ -336,7 +337,9 @@ svg {
 
 /* Adds a dashed border to help you see the box while you're designing */
 .border {
-  border: 1px dashed var(--color-accent-primary); /* This uses your custom accent color */
+  border: 3px solid var(--color-accent-primary);
+  border-radius: 2.2rem;
+   /* This uses your custom accent color */
   /* TODO: Delete this later – it’s just here to help you see the box while you work */
 }
 
@@ -524,6 +527,18 @@ em {
   color: var(--color-text-project-category);
 }
 
+.asside-socials-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: ;
+
+}
+
+.socials-link{
+  min-height: 5vh;
+}
+
 /*
 
 ██   ██ ██    ██ ██████  ███████ ██████  ██      ██ ███    ██ ██   ██ ███████ 
@@ -637,6 +652,7 @@ a.nav-link-primary:hover {
 .hero-header {
   min-height: 6rem; /* Space reserved for logo + nav */
   width: 100%; 
+  background: var(--color-bg);
 }
 
 .nav-branding {
@@ -739,6 +755,8 @@ a.nav-link-primary:hover {
   padding: var(--padding-small);
   margin-bottom: 1rem;
 }
+
+
 .section-item {
   padding: var(--padding-small);
   margin: 1rem;
@@ -1112,6 +1130,7 @@ body {
   justify-content: center;
   flex-direction: column;
   margin-bottom: 1rem; /* Space below the image */
+  
 }
 
 /* Container for project description */
@@ -1124,6 +1143,7 @@ body {
   padding: var(--padding-small);
   width: 100%;
   margin-bottom: 1rem; /* Space below the description */
+  gap: 3rem;
   border-bottom: #3d4e42 2px dashed;
 }
 

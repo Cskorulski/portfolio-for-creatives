@@ -48,8 +48,6 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
 
-
-
 /* Robotto Slab */
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap");
 
@@ -124,43 +122,43 @@
   --font-family-subheading: "Roboto Slab", sans-serif;
   --font-family-project-title: "Roboto Slab", sans-serif;
   /* Core Colours */
-  --color-text-primary: #514B24;
-  --color-text-secondary: #514B24;
-  --color-accent-primary: #514B24;
-  --color-accent-secondary: #514B24;
-  --color-overlay-primary: #514B24;
-  --color-highlight: #514B24;
+  --color-text-primary: #514b24;
+  --color-text-secondary: #514b24;
+  --color-accent-primary: #514b24;
+  --color-accent-secondary: #514b24;
+  --color-overlay-primary: #514b24;
+  --color-highlight: #514b24;
   --color-fallback: #ff057c; /* Fallback color for glitch effect on 404 page */
   /* Backgrounds */
-  --color-bg:#fffcf3;
-  --color-bg-about:#fffcf3;
-  --color-bg-footer:#fffcf3;
-  --color-bg-holding-page:#fffcf3;
-  --color-work-display: #fffcf3; 
+  --color-bg: #fffcf3;
+  --color-bg-about: #fffcf3;
+  --color-bg-footer: #fffcf3;
+  --color-bg-holding-page: #fffcf3;
+  --color-work-display: #fffcf3;
   /* Headings */
-  --h1-color: #514B24;
-  --h2-color: #514B24;
-  --h3-color: #514B24;
-  --h4-color: #514B24;
-  --h5-color: #514B24;
-  --h6-color: #514B24;
+  --h1-color: #514b24;
+  --h2-color: #514b24;
+  --h3-color: #514b24;
+  --h4-color: #514b24;
+  --h5-color: #514b24;
+  --h6-color: #514b24;
   /* Special Text Colours */
   --color-text-holding-title: #fffcf3;
   --color-text-project-category: #fffcf3;
-  --color-text-project-description:#514B24;
-  --color-text-project-sidebar: #514B24
-  --color-text-project-title: #514B24;
+  --color-text-project-description: #514b24;
+  --color-text-project-sidebar: #514b24;
+  --color-text-project-title: #514b24;
   --color-text-work-grid-title: #fffcf3;
   /* Link States */
-  --color-link:#85A98C;
-  --color-link-hover: #FEA830;
-  --color-link-visited: #B3A539;
+  --color-link: #85a98c;
+  --color-link-hover: #fea830;
+  --color-link-visited: #b3a539;
   /* Navigation */
-  --color-nav-link: #E66841;
+  --color-nav-link: #e66841;
   --color-nav-link-hover: #13101b;
-  --color-nav-arrow: #E66841;
+  --color-nav-arrow: #e66841;
   --color-nav-arrow-hover: #000;
-  --color-nav-arrow-stroke: #E66841;
+  --color-nav-arrow-stroke: #e66841;
   --color-nav-arrow-stroke-hover: #000;
   /* Components */
   --color-bg-full-width: #fffcf3;
@@ -339,7 +337,7 @@ svg {
 .border {
   border: 3px solid var(--color-accent-primary);
   border-radius: 2.2rem;
-   /* This uses your custom accent color */
+  /* This uses your custom accent color */
   /* TODO: Delete this later – it’s just here to help you see the box while you work */
 }
 
@@ -527,15 +525,14 @@ em {
   color: var(--color-text-project-category);
 }
 
-.asside-socials-container{
+.asside-socials-container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: ;
-
 }
 
-.socials-link{
+.socials-link {
   min-height: 5vh;
 }
 
@@ -651,7 +648,7 @@ a.nav-link-primary:hover {
 }
 .hero-header {
   min-height: 6rem; /* Space reserved for logo + nav */
-  width: 100%; 
+  width: 100%;
   background: var(--color-bg);
 }
 
@@ -756,7 +753,6 @@ a.nav-link-primary:hover {
   margin-bottom: 1rem;
 }
 
-
 .section-item {
   padding: var(--padding-small);
   margin: 1rem;
@@ -793,7 +789,7 @@ a.nav-link-primary:hover {
   padding: var(
     --padding-tiny
   ); /* Padding to keep content from touching edges */
-background-color: var(--color-bg); 
+  background-color: var(--color-bg);
 }
 
 /* Work Sidebar on Mobile */
@@ -869,9 +865,8 @@ background-color: var(--color-bg);
   /* Placeholder: no custom styles yet */
 }
 
-.project-details{
+.project-details {
   background-color: ;
-  
 }
 
 /*
@@ -1112,6 +1107,7 @@ body {
 .project-full-width {
   width: 100%;
   margin-bottom: 2rem;
+  border: 2px solid orange;
 }
 
 /* Sidebar Styles */
@@ -1130,7 +1126,6 @@ body {
   justify-content: center;
   flex-direction: column;
   margin-bottom: 1rem; /* Space below the image */
-  
 }
 
 /* Container for project description */
@@ -1153,6 +1148,11 @@ body {
   padding: var(--padding-small);
   align-self: center;
 }
+.col-3 {
+  width: 100%;
+  padding: var(--padding-small);
+  align-self: center;
+}
 
 /* Project image styling */
 .project-image {
@@ -1161,7 +1161,6 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  margin: 1rem;
 }
 /* Project details section */
 .project-details {
@@ -1199,7 +1198,7 @@ body {
   flex-wrap: wrap;
 }
 
-.safe-background{
+.safe-background {
   background: var(--color-work-display);
 }
 
@@ -1477,7 +1476,7 @@ to keep your styles reusable and consistent.
   /* Project Full Width Styles */
 
   .project-wrapper-full-width {
-    padding: var(--padding-small) var(--padding-jumbo);
+    padding: var(--padding-small);
   }
 
   /* Sidebar on Large Devices */
@@ -1508,6 +1507,9 @@ to keep your styles reusable and consistent.
   }
   .col-2 {
     width: 50%;
+  }
+  .col-3 {
+    width: 33.333333%;
   }
 
   .project-navigation {
@@ -1577,11 +1579,12 @@ to keep your styles reusable and consistent.
   /* Work Sidebar on Large Devices */
 
   .work-sidebar {
-    width: 25%;
+    width: 15%;
     height: 80vh;
     position: -webkit-sticky;
     position: sticky;
     top: 1rem;
+    border-right: 2px solid hotpink;
   }
 
   /* Main Work Area on Large Devices */

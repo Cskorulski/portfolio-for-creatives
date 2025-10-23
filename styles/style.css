@@ -1069,6 +1069,10 @@ a.nav-link-primary:hover {
   padding: var(--padding-small);
 }
 
+.dashed-divider {
+  border-bottom: #3d4e42 2px dashed;
+}
+
 /* 
 
 ██████  ██████   ██████       ██ ███████  ██████ ████████     ██████   █████   ██████  ███████ 
@@ -1139,7 +1143,6 @@ body {
   width: 100%;
   margin-bottom: 1rem; /* Space below the description */
   gap: 3rem;
-  border-bottom: #3d4e42 2px dashed;
 }
 
 /* Column styles for two-column layouts */

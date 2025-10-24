@@ -218,7 +218,8 @@
 html {
   box-sizing: border-box; /* Makes sure padding and borders don't add extra width to elements */
   scroll-behavior: smooth; /* Adds smooth scrolling between sections */
-  cursor: url("../assets/temp/up-cursor.png"), auto !important; /* Custom cursor (change the URL below to use your own) */
+  cursor: url("../assets/my-projects/personal-branding/custom-low-fid-cursor.png"),
+    auto !important; /* Custom cursor (change the URL below to use your own) */
 
   /* TODO: Replace the URL above to add a custom cursor. 
      If you want to use the default browser cursor, just delete this line. */
@@ -868,6 +869,15 @@ a.nav-link-primary:hover {
   background-color: ;
 }
 
+.hero-name {
+  display: flex;
+  flex-direction: column;
+}
+
+.big-name {
+  font-size: 10rem;
+}
+
 /*
 
 ███████ ██ ██████  ███████ ██████   █████  ██████  
@@ -903,7 +913,16 @@ a.nav-link-primary:hover {
 }
 
 .social-media-sidebar {
+  display: flex;
   flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+
+  padding: var(--padding-small);
+}
+
+.fa-brands {
+  font-size: 3rem;
 }
 
 /* 
@@ -1405,7 +1424,7 @@ to keep your styles reusable and consistent.
   }
 
   h1 {
-    font-size: 4.275rem;
+    font-size: 2rem;
   }
 
   h2 {
@@ -1431,6 +1450,12 @@ to keep your styles reusable and consistent.
 
   .hero {
     min-height: 100vh;
+  }
+
+  .hero-name {
+  }
+
+  .big-name {
   }
 
   .hero-headline-wrapper {

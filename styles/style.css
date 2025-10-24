@@ -428,7 +428,7 @@ h4 {
 }
 
 h5 {
-  font-size: 1.1rem;
+  font-size: 1rem;
   line-height: 145%;
   font-family: var(--font-family-body);
   line-height: 1.2;
@@ -902,6 +902,10 @@ a.nav-link-primary:hover {
   flex-direction: column;
 }
 
+.social-media-sidebar {
+  flex-direction: row;
+}
+
 /* 
 
  █████  ██████   ██████  ██    ██ ████████ 
@@ -1154,6 +1158,11 @@ body {
   width: 100%;
   padding: var(--padding-small);
   align-self: center;
+}
+
+.col-4 {
+  width: 25%;
+  padding: var(--padding-small);
 }
 
 /* Project image styling */

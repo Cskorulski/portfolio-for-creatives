@@ -152,14 +152,14 @@
   /* Link States */
   --color-link: #85a98c;
   --color-link-hover: #fea830;
-  --color-link-visited: #b3a539;
+  --color-link-visited: #85a98c;
   /* Navigation */
   --color-nav-link: #e66841;
-  --color-nav-link-hover: #13101b;
+  --color-nav-link-hover: #b3a539;
   --color-nav-arrow: #e66841;
-  --color-nav-arrow-hover: #000;
+  --color-nav-arrow-hover: #b3a539;
   --color-nav-arrow-stroke: #e66841;
-  --color-nav-arrow-stroke-hover: #000;
+  --color-nav-arrow-stroke-hover: #b3a539;
   /* Components */
   --color-bg-full-width: #fffcf3;
   --color-bg-project-description: #fffcf3;
@@ -175,7 +175,7 @@
   /* Special Elements */
   --color-icon-heart: darkred;
   --color-text-holding-footer: #fffcf3;
-  --color-bg-selection: #5200ff;
+  --color-bg-selection: #fea830;
   --color-shadow-stroke: rgba(0, 0, 0, 0.4);
   /* Assets */
   --image-noise-texture: url(/assets/temp/noise.svg);
@@ -1425,7 +1425,7 @@ to keep your styles reusable and consistent.
   }
 
   h1 {
-    font-size: 2rem;
+    font-size: 4rem;
   }
 
   h2 {

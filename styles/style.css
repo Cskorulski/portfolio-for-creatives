@@ -218,7 +218,7 @@
 html {
   box-sizing: border-box; /* Makes sure padding and borders don't add extra width to elements */
   scroll-behavior: smooth; /* Adds smooth scrolling between sections */
-  cursor: url("../assets/my-projects/personal-branding/custom-low-fid-cursor.png"),
+  cursor: url("../assets/my-projects/personal-branding/low-fid-custom-cursor.png"),
     auto !important; /* Custom cursor (change the URL below to use your own) */
 
   /* TODO: Replace the URL above to add a custom cursor. 

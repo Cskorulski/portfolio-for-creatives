@@ -116,6 +116,13 @@
 }*/
 
 :root {
+  /*BRANDED*/
+  --color-green: #b3a539;
+  --color-black: #514b24;
+  --color-red: #e66841;
+  --color-teal: #85a98c;
+  --color-yellow: #fea830;
+
   /* Typography */
   --font-family-body: "Roboto Slab", sans-serif;
   --font-family-heading: "Rubik", sans-serif;
@@ -130,11 +137,11 @@
   --color-highlight: #514b24;
   --color-fallback: #ff057c; /* Fallback color for glitch effect on 404 page */
   /* Backgrounds */
-  --color-bg: #fffcf3;
-  --color-bg-about: #fffcf3;
-  --color-bg-footer: #fffcf3;
-  --color-bg-holding-page: #fffcf3;
-  --color-work-display: #fffcf3;
+  --color-bg: #fffdf9;
+  --color-bg-about: #fffdf9;
+  --color-bg-footer: #fffdf9;
+  --color-bg-holding-page: #fffdf9;
+  --color-work-display: #fffdf9;
   /* Headings */
   --h1-color: #514b24;
   --h2-color: #514b24;
@@ -143,12 +150,12 @@
   --h5-color: #514b24;
   --h6-color: #514b24;
   /* Special Text Colours */
-  --color-text-holding-title: #fffcf3;
-  --color-text-project-category: #fffcf3;
+  --color-text-holding-title: #ffffdf9;
+  --color-text-project-category: #fffdf9;
   --color-text-project-description: #514b24;
   --color-text-project-sidebar: #514b24;
   --color-text-project-title: #514b24;
-  --color-text-work-grid-title: #fffcf3;
+  --color-text-work-grid-title: #fffdf9;
   /* Link States */
   --color-link: #85a98c;
   --color-link-hover: #fea830;
@@ -161,10 +168,10 @@
   --color-nav-arrow-stroke: #e66841;
   --color-nav-arrow-stroke-hover: #b3a539;
   /* Components */
-  --color-bg-full-width: #fffcf3;
-  --color-bg-project-description: #fffcf3;
+  --color-bg-full-width: #fffdf9;
+  --color-bg-project-description: #fffdf9;
   --color-bg-sidebar-project: orangered;
-  --color-bg-sidebar-work: #fffcf3;
+  --color-bg-sidebar-work: #fffdf9;
   --color-gradient-hero: linear-gradient(90deg, #ff00ff, #00ffff);
   --color-gradient-project-details: linear-gradient(
     -225deg,
@@ -174,7 +181,7 @@
   );
   /* Special Elements */
   --color-icon-heart: darkred;
-  --color-text-holding-footer: #fffcf3;
+  --color-text-holding-footer: #fffdf9;
   --color-bg-selection: #fea830;
   --color-shadow-stroke: rgba(0, 0, 0, 0.4);
   /* Assets */
@@ -195,6 +202,16 @@
   --padding-large: 3rem; /* Section spacing: content blocks, banner padding */
   --padding-jumbo: 4rem; /* Hero elements: full-width containers, page headers */
   --padding-ultra: 8rem; /* Full-bleed spacing: edge-to-edge layouts, super-sized headers */
+}
+
+.see-box {
+  border: 2px;
+  border-color: #ff00ff;
+}
+
+.see-box-two {
+  border: 2px;
+  border-color: #00ffff;
 }
 
 /* ======================
@@ -218,7 +235,8 @@
 html {
   box-sizing: border-box; /* Makes sure padding and borders don't add extra width to elements */
   scroll-behavior: smooth; /* Adds smooth scrolling between sections */
-  cursor: url("../assets/my-projects/personal-branding/low-fid-custom-cursor.png"),
+  cursor:
+    url("../assets/my-projects/personal-branding/low-fid-custom-cursor.png"),
     auto !important; /* Custom cursor (change the URL below to use your own) */
 
   /* TODO: Replace the URL above to add a custom cursor. 
@@ -395,9 +413,8 @@ svg {
 /* Heading Styles (h1 - h6) */
 
 h1 {
-  font-size: 2.2rem;
+  font-size: 1rem;
   font-family: var(--font-family-heading);
-  line-height: ;
   margin-bottom: 1rem;
   font-weight: 900;
   color: var(--h1-color);
@@ -451,10 +468,10 @@ h6 {
 /* ------------------------------------------------------------------ */
 
 p {
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-family: var(--font-family-body);
   line-height: 145%;
-  margin-bottom: 1rem;
+
   font-weight: 200;
 }
 
@@ -483,7 +500,7 @@ em {
 .project-title {
   font-size: 2rem;
   font-family: var(--font-family-project-title);
-  font-weight: 400;
+  font-weight: 200;
   color: var(--color-text-project-title);
   margin-bottom: 1rem;
 }
@@ -530,7 +547,6 @@ em {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: ;
 }
 
 .socials-link {
@@ -555,18 +571,18 @@ em {
 
 /* Unvisited link */
 a:link {
-  color: var(--color-link);
+  color: var(--color-black);
   text-decoration: none; /* Removes underline */
 }
 
 /* Visited link — after a user clicks and returns */
 a:visited {
-  color: var(--color-link-visited);
+  color: var(--color-text-primary);
 }
 
 /* Hover — when a user hovers their mouse over the link */
 a:hover {
-  color: var(--color-link-hover);
+  color: var(--color-red);
 }
 
 /* Focus — when a link is focused (keyboard navigation) */
@@ -586,10 +602,10 @@ a:active {
 /* -------------------------------------------------------------------------- */
 
 a.nav-link-primary {
-  color: var(--color-nav-link);
+  color: var(--color-black);
 }
 a.nav-link-primary:hover {
-  color: var(--color-nav-link-hover);
+  color: var(--color-red);
 }
 
 /* -------------------------------------------------------------------------- */
@@ -602,13 +618,13 @@ a.nav-link-primary:hover {
 
 .navigation-arrow:link,
 .navigation-arrow:visited {
-  color: var(--color-nav-arrow);
+  color: var(--color-black);
 }
 
 /* Hover and active (clicked) states — makes arrows feel interactive */
 .navigation-arrow:active,
 .navigation-arrow:hover {
-  color: var(--color-nav-arrow-hover);
+  color: var(--color-red);
 }
 
 /* 🖋️ Optional stroke effect for a bold, outlined arrow look */
@@ -775,6 +791,10 @@ a.nav-link-primary:hover {
 /* The goal is to showcase your projects and provide a responsive, clean UI  */
 /* -------------------------------------------------------------------------- */
 
+.see-box {
+  border: #00ffff;
+  border-style: dashed;
+}
 .clipped-test {
   clip-path: url(assets/my-projects/personal-branding/greasy-green.svg);
 }
@@ -800,6 +820,8 @@ a.nav-link-primary:hover {
     --color-bg-sidebar-work
   ); /* Background color for the sidebar */
 }
+.work-sidebar-page {
+}
 
 /* Main Work Area with Sidebar on Mobile */
 .work-details {
@@ -817,9 +839,128 @@ a.nav-link-primary:hover {
   /* The auto-fit and minmax() function help ensure responsiveness across screen sizes */
 }
 
+.experiment-grid {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(1, 1fr);
+  margin: 0rem;
+  padding: 2.5%;
+  background-color: transparent;
+}
+
+.grid-card {
+  border: 1.5px solid var(--color-black);
+  border-radius: 2%;
+  padding: 5%;
+}
+
+.card-top {
+  width: 100%;
+  aspect-ratio: 4/4;
+  overflow: hidden;
+  margin-bottom: 7%;
+  border-radius: 2%;
+}
+.card-bottom {
+  border-top: 1.5px solid var(--color-black);
+  padding: 5%;
+}
+.thumbnail {
+  width: 50;
+}
+
+/* SVG SHAPES */
+
+.card-top-svg {
+  width: 100%;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Rubik:ital,wght@0,400;0,500;0,600;0,700;0,800;1,900&display=swap");
+
+body {
+  font-family: "Rubik", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+h1 {
+  font-size: 1.875rem;
+  color: white;
+}
+svg,
+img {
+  max-width: 100%;
+  height: auto;
+  display: block; /* Removes bottom gap */
+}
+.card {
+  width: 33.333%;
+  height: auto;
+  position: relative; /* Required to contain overlay size */
+  margin: 1rem;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: 0.75s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.clipped .solid {
+  background-color: rgba(255, 0, 0, 1);
+}
+.clipped:hover .solid {
+  opacity: 0.8;
+}
+
+.svg-shape {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.clipped {
+  width: 100%;
+  height: 400px;
+  background-size: cover;
+}
+
+.overlay-wrapper-1 {
+  background: url(https://letstalkscience.ca/sites/default/files/2020-03/calico-cat.jpg);
+  clip-path: url(#my-clip-path1);
+}
+.overlay-wrapper-2 {
+  background: url(https://assets.codepen.io/316293/aspect-ratio.jpg);
+  clip-path: url(#my-clip-path2);
+}
+
 /* Individual Work Grid Item */
 .work-page-grid-item {
   width: 100%;
+  position: relative; /* Needed to position the overlay */
+  overflow: hidden;
+  object-position: center;
+  object-fit: cover;
+}
+
+.exp-work-page-grid-item {
+  width: 100%;
+  height: 10rem;
   position: relative; /* Needed to position the overlay */
   overflow: hidden;
   object-position: center;
@@ -830,6 +971,14 @@ a.nav-link-primary:hover {
 .project-container {
   background: var(--color-accent-primary); /* Set project background color */
   padding: var(--padding-medium);
+}
+
+.project-page-overlay-item {
+  width: 100%;
+  position: relative; /* Needed to position the overlay */
+  overflow: hidden;
+  object-position: center;
+  object-fit: cover;
 }
 
 /* Overlay (appears on hover) */
@@ -848,16 +997,74 @@ a.nav-link-primary:hover {
   align-items: center;
   flex-direction: column;
   padding: var(--padding-small);
-  background-color: var(
-    --color-overlay-primary
-  ); /* Background color of the overlay */
-  transition: opacity var(--duration-normal), visibility var(--duration-normal);
+  background-color: var(--color-teal); /* Background color of the overlay */
+  transition:
+    opacity var(--duration-normal),
+    visibility var(--duration-normal);
+}
+
+/*overlay dissapears with hover */
+
+.schmoo {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 100; /* Initially invisible */
+  transition: var(--duration-slow) ease;
+  display: flex;
+  justify-content: left;
+  align-items: flex-end;
+  flex-direction: row;
+  padding: var(--padding-medium);
+  background-color: var(--color-red); /* Background color of the overlay */
+  mix-blend-mode: lighten;
+
+  transition:
+    opacity var(--duration-normal),
+    visibility var(--duration-normal);
+}
+
+.smack {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 100; /* Initially invisible */
+  transition: var(--duration-slow) ease;
+  display: flex;
+  justify-content: left;
+  align-items: flex-end;
+  flex-direction: row;
+  padding: var(--padding-medium);
+  background-color: var(--color-bg-selection);
+  mix-blend-mode: color; /* Background color of the overlay */
+
+  transition:
+    opacity var(--duration-normal),
+    visibility var(--duration-normal);
 }
 
 /* Hover effect on work page grid items */
+/* ORRIGINAL CODE */
 .work-page-grid-item:hover .overlay {
   visibility: visible; /* Make overlay visible on hover */
-  opacity: 0.8; /* Set opacity on hover */
+  opacity: 0.8;
+}
+/* Set opacity on hover */
+
+.project-page-overlay-item:hover .schmoo {
+  opacity: 0; /* Set opacity on hover */
+}
+
+.project-page-overlay-item:hover .smack {
+  opacity: 0; /* Set opacity on hover */
 }
 
 /* Optional container for future overlay customization */
@@ -866,7 +1073,6 @@ a.nav-link-primary:hover {
 }
 
 .project-details {
-  background-color: ;
 }
 
 .hero-name {
@@ -876,7 +1082,36 @@ a.nav-link-primary:hover {
 }
 
 .big-name {
-  font-size: 3rem;
+  font-size: 10rem;
+}
+
+.over-image-big-name {
+  color: var(--color-bg);
+  text-transform: uppercase;
+  font-size: 12vw;
+}
+
+.title-over-image {
+  position: relative;
+}
+
+.title-over-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.title-over-corner {
+  text-align: right;
+  position: absolute;
+  bottom: 1rem;
+  right: 2rem;
+}
+
+.title-over-corner-rev {
+  position: absolute;
+  bottom: 1rem;
+  right: 2rem;
 }
 
 /*
@@ -903,7 +1138,16 @@ a.nav-link-primary:hover {
 
 /* Individual navigation item styles */
 .sidebar-nav-item {
+  font-family: var(--font-family-subheading);
+  font-weight: 100;
+  text-transform: uppercase;
+  color: var(--color-text-primary);
   margin-bottom: 1rem; /* Space between each navigation item */
+}
+
+.contact-style {
+  font-family: var(--font-family-heading);
+  font-weight: 400;
 }
 
 .hero-aside {
@@ -1127,7 +1371,6 @@ body {
 /* Full-width wrapper for the project section */
 .project-wrapper-full-width {
   width: 100%;
-  padding: var(--padding-small);
 }
 
 /* Container for the project content with full-width display */
@@ -1171,7 +1414,7 @@ body {
 .col-2 {
   width: 100%;
   padding: var(--padding-small);
-  align-self: center;
+  align-self: flex-start;
 }
 .col-3 {
   width: 100%;
@@ -1182,6 +1425,10 @@ body {
 .col-4 {
   width: 100%;
   padding: var(--padding-small);
+}
+
+.courier-cover {
+  height: 100vh;
 }
 
 /* Project image styling */
@@ -1284,11 +1531,8 @@ body {
   width: 100%;
   min-height: 100vh;
   /* TODO: Delete the following if you do not want a grainy gradient background on index.html. Be careful not to delete the closing } */
-  background: linear-gradient(
-      0deg,
-      rgba(0, 0, 0, 1),
-      var(--color-bg-holding-page)
-    ),
+  background:
+    linear-gradient(0deg, rgba(0, 0, 0, 1), var(--color-bg-holding-page)),
     var(--image-noise-texture);
   /* For more on grainy gradients see https://grainy-gradients.vercel.app/ */
 }
@@ -1403,6 +1647,10 @@ to keep your styles reusable and consistent.
 /* Medium devices (tablets, 768px and up) */
 
 @media (min-width: 768px) {
+  .experiment-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+  }
   /* TODO: Adjust  layout for tablets */
 }
 
@@ -1458,7 +1706,8 @@ to keep your styles reusable and consistent.
   }
 
   .big-name {
-    font-size: 10rem;
+    font-size: clamp(1rem, 50vw, 5rem);
+    text-transform: uppercase;
   }
 
   .hero-headline-wrapper {

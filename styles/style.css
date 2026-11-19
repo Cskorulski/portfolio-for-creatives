@@ -124,7 +124,7 @@
   --color-yellow: #fea830;
 
   /* Typography */
-  --font-family-body: "Roboto Slab", sans-serif;
+  --font-family-body: "Rubik", sans-serif;
   --font-family-heading: "Rubik", sans-serif;
   --font-family-subheading: "Roboto Slab", sans-serif;
   --font-family-project-title: "Roboto Slab", sans-serif;
@@ -442,6 +442,7 @@ h4 {
   margin-bottom: 1rem;
   font-weight: 300;
   color: var(--h4-color);
+  font-style: normal;
 }
 
 h5 {
@@ -775,13 +776,8 @@ a.nav-link-primary:hover {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: var(--padding-small);
-  margin-bottom: 1rem;
-}
 
-.section-item {
-  padding: var(--padding-small);
-  margin: 1rem;
+  margin-bottom: 1rem;
 }
 
 /* 
@@ -863,6 +859,21 @@ a.nav-link-primary:hover {
   padding: 5%;
 }
 
+.courier-cover-grid {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(2, 2fr);
+  margin: 0rem;
+  padding: 2.5%;
+  background-color: transparent;
+}
+
+.courier-cover-card {
+  border: 2px solid var(--color-black);
+  border-radius: 5%;
+  padding: 5%;
+}
+
 .card-top {
   width: 100%;
   aspect-ratio: 4/4;
@@ -912,6 +923,14 @@ img {
 }
 
 .grid-card:hover {
+  box-shadow: 2px 2px 0 var(--color-black);
+  transform: translate(2px, 2px);
+  transition:
+    box-shadow 0.2s ease,
+    transform 0.2s ease;
+}
+
+.courier-cover-card:hover {
   box-shadow: 2px 2px 0 var(--color-black);
   transform: translate(2px, 2px);
   transition:
@@ -1022,7 +1041,7 @@ img {
 
 /*overlay dissapears with hover */
 
-.schmoo {
+.project-hero-overlay-yellow {
   position: absolute;
   top: 0;
   right: 0;
@@ -1038,7 +1057,99 @@ img {
   flex-direction: row;
   padding: var(--padding-medium);
   background-color: var(--color-yellow); /* Background color of the overlay */
-  mix-blend-mode: color;
+  opacity: 70%;
+
+  transition:
+    opacity var(--duration-normal),
+    visibility var(--duration-normal);
+}
+
+.project-hero-overlay-teal {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 100; /* Initially invisible */
+  transition: var(--duration-slow) ease;
+  display: flex;
+  justify-content: left;
+  align-items: flex-end;
+  flex-direction: row;
+  padding: var(--padding-medium);
+  background-color: var(--color-teal); /* Background color of the overlay */
+  opacity: 70%;
+
+  transition:
+    opacity var(--duration-normal),
+    visibility var(--duration-normal);
+}
+
+.project-hero-overlay-green {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 100; /* Initially invisible */
+  transition: var(--duration-slow) ease;
+  display: flex;
+  justify-content: left;
+  align-items: flex-end;
+  flex-direction: row;
+  padding: var(--padding-medium);
+  background-color: var(--color-green); /* Background color of the overlay */
+  opacity: 70%;
+
+  transition:
+    opacity var(--duration-normal),
+    visibility var(--duration-normal);
+}
+
+.project-hero-overlay-red {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 100; /* Initially invisible */
+  transition: var(--duration-slow) ease;
+  display: flex;
+  justify-content: left;
+  align-items: flex-end;
+  flex-direction: row;
+  padding: var(--padding-medium);
+  background-color: var(--color-red); /* Background color of the overlay */
+  opacity: 70%;
+
+  transition:
+    opacity var(--duration-normal),
+    visibility var(--duration-normal);
+}
+
+.project-hero-overlay-black {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 100; /* Initially invisible */
+  transition: var(--duration-slow) ease;
+  display: flex;
+  justify-content: left;
+  align-items: flex-end;
+  flex-direction: row;
+  padding: var(--padding-medium);
+  background-color: var(--color-black); /* Background color of the overlay */
+  opacity: 70%;
 
   transition:
     opacity var(--duration-normal),
@@ -1053,7 +1164,7 @@ img {
   left: 0;
   width: 100%;
   height: 100%;
-  opacity: 100; /* Initially invisible */
+  opacity: 100;
   transition: var(--duration-slow) ease;
   display: flex;
   justify-content: left;
@@ -1090,6 +1201,102 @@ img {
     visibility var(--duration-normal);
 }
 
+.smack-teal {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 100; /* Initially invisible */
+  transition: var(--duration-slow) ease;
+  display: flex;
+  justify-content: left;
+  align-items: flex-end;
+  flex-direction: row;
+  padding: var(--padding-medium);
+  background-color: var(--color-teal);
+
+  mix-blend-mode: color; /* Background color of the overlay */
+
+  transition:
+    opacity var(--duration-normal),
+    visibility var(--duration-normal);
+}
+
+.smack-green {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 100; /* Initially invisible */
+  transition: var(--duration-slow) ease;
+  display: flex;
+  justify-content: left;
+  align-items: flex-end;
+  flex-direction: row;
+  padding: var(--padding-medium);
+  background-color: var(--color-green);
+
+  mix-blend-mode: color; /* Background color of the overlay */
+
+  transition:
+    opacity var(--duration-normal),
+    visibility var(--duration-normal);
+}
+
+.smack-red {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 100; /* Initially invisible */
+  transition: var(--duration-slow) ease;
+  display: flex;
+  justify-content: left;
+  align-items: flex-end;
+  flex-direction: row;
+  padding: var(--padding-medium);
+  background-color: var(--color-red);
+
+  mix-blend-mode: color; /* Background color of the overlay */
+
+  transition:
+    opacity var(--duration-normal),
+    visibility var(--duration-normal);
+}
+
+.smack-black {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 100; /* Initially invisible */
+  transition: var(--duration-slow) ease;
+  display: flex;
+  justify-content: left;
+  align-items: flex-end;
+  flex-direction: row;
+  padding: var(--padding-medium);
+  background-color: var(--color-black);
+
+  mix-blend-mode: color; /* Background color of the overlay */
+
+  transition:
+    opacity var(--duration-normal),
+    visibility var(--duration-normal);
+}
+
 /* Hover effect on work page grid items */
 /* ORRIGINAL CODE */
 .work-page-grid-item:hover .overlay {
@@ -1098,7 +1305,23 @@ img {
 }
 /* Set opacity on hover */
 
-.project-page-overlay-item:hover .schmoo {
+.project-page-overlay-item:hover .project-hero-overlay-green {
+  opacity: 0; /* Set opacity on hover */
+}
+
+.project-page-overlay-item:hover .project-hero-overlay-red {
+  opacity: 0; /* Set opacity on hover */
+}
+
+.project-page-overlay-item:hover .project-hero-overlay-teal {
+  opacity: 0; /* Set opacity on hover */
+}
+
+.project-page-overlay-item:hover .project-hero-overlay-yellow {
+  opacity: 0; /* Set opacity on hover */
+}
+
+.project-page-overlay-item:hover .project-hero-overlay-black {
   opacity: 0; /* Set opacity on hover */
 }
 .project-page-overlay-item:hover .schmoo-type {
@@ -1109,6 +1332,20 @@ img {
   opacity: 0; /* Set opacity on hover */
 }
 
+.project-page-overlay-item:hover .smack-teal {
+  opacity: 0; /* Set opacity on hover */
+}
+
+.project-page-overlay-item:hover .smack-green {
+  opacity: 0; /* Set opacity on hover */
+}
+
+.project-page-overlay-item:hover .smack-red {
+  opacity: 0; /* Set opacity on hover */
+}
+.project-page-overlay-item:hover .smack-black {
+  opacity: 0; /* Set opacity on hover */
+}
 /* Optional container for future overlay customization */
 .project-details-overlay {
   /* Placeholder: no custom styles yet */
@@ -1141,6 +1378,13 @@ img {
   color: var(--color-bg);
   text-transform: uppercase;
   font-size: 12vw;
+}
+
+.no-image-big-name {
+  color: var(--color-black);
+  text-transform: uppercase;
+  font-size: 9vw;
+  text-align: right;
 }
 
 .title-over-image {
@@ -1200,7 +1444,10 @@ img {
 .contact-style {
   font-family: var(--font-family-heading);
   font-weight: 400;
-  font-size: 1rem;
+  font-size: 0.75rem;
+  border-bottom: var(--color-black) 1.5px;
+  border-style: solid;
+  margin-bottom: 0.5rem;
 }
 
 .hero-aside {
@@ -1339,6 +1586,7 @@ img {
 .footer-item {
   line-height: 1.2; /* Consistent line height for footer items to improve spacing */
   margin-bottom: 0.25rem;
+  font-weight: 100;
 }
 
 /* ------------------------------- */
@@ -1471,7 +1719,7 @@ body {
 }
 .col-3 {
   width: 100%;
-  padding: var(--padding-small);
+  padding: 0.5rem;
   align-self: center;
 }
 
@@ -1491,6 +1739,31 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+  margin-top: 0.75rem;
+}
+.project-caption {
+  justify-content: flex-start;
+  width: 100%;
+}
+.project-caption-style {
+  font-size: 0.75rem;
+  font-family: var(--font-family-heading);
+  font-weight: 200;
+  border-top: var(--color-black) 1px;
+  border-style: solid;
+}
+
+.project-title-style {
+  margin-bottom: 2rem;
+  border-bottom: var(--color-black) 1.5px;
+  border-style: solid;
+}
+
+.project-description-style {
+  font-size: 0.9rem;
+  font-family: var(--font-family-heading);
+  font-weight: 200;
+  margin-bottom: 0.75rem;
 }
 /* Project details section */
 .project-details {
@@ -1702,6 +1975,14 @@ to keep your styles reusable and consistent.
 @media (min-width: 768px) {
   .experiment-grid {
     grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+  }
+  /* TODO: Adjust  layout for tablets */
+}
+
+@media (min-width: 768px) {
+  .courier-cover-grid {
+    grid-template-columns: repeat(4, 1fr);
     grid-gap: 1rem;
   }
   /* TODO: Adjust  layout for tablets */

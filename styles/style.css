@@ -1200,6 +1200,7 @@ img {
 .contact-style {
   font-family: var(--font-family-heading);
   font-weight: 400;
+  font-size: 1rem;
 }
 
 .hero-aside {
